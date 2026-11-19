@@ -16,27 +16,15 @@
 
 ```sudo sed -i "s/PasswordAthentication yes/PasswordAuthentication no/ /etc/ssh/sshd_config```
 
-```sudo systemctl restart ssh.service```
+```sudo systemctl restart ssh.service```	
 
-4. Настройка файрвола iptables. Разрешаем входящий траффик по протоколу ssh.
-
-```sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT```
-
-```sudo iptables -A INPUT -p tcp --dport 80 -j DROP```
-
-```sudo iptables -A INPUT -p tcp --dport 443 -j DROP```
-
-5. Установка зависимостей
-   
-  ```sudo apt install easy-rsa```	
-
-6. Запуск скрипта CA-CERT
+4. Запуск скрипта CA-CERT
 
   ```cd /opt/easy-rsa/CA-CERT```
   
   ```./CA-CERT```
 
-7. Установка ключа сертифицированного центра 
+5. Установка ключа сертифицированного центра 
 
 ```cd ~/easy-rsa/```
 
