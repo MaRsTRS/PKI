@@ -2,12 +2,22 @@
 
 set -e
 
+# install easy-rsa
+sudo apt install -y easy-rsa
+
+#Forward SSH
+sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 80 -j DROP
+sudo iptables -A INPUT -p tcp --dport 443 -j DROP
+
+
+
 PKI_DIR="/home/$USER/easy-rsa"
 CA_CERT=$PKI_DIR/pki/ca.crt
 
 # Check file CRT
 if [ -f "$CA_CERT" ]; then
-	echo "File .crt exist"
+	echo "File .crt exist at $CA_CERT"
 	exit 0
 fi
 

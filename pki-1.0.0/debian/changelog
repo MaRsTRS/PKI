@@ -1,5 +1,5 @@
-pki (1.0.0-1) UNRELEASED; urgency=medium
+pki (1.0.0-3) FIX; urgency=medium
 
-  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+  * Initial release gpg_key
 
  -- Mars <mars@xcompany.org>  Sat, 14 Nov 2026 09:48:05 +0000
