@@ -1,0 +1,16 @@
+Source: pki
+Section: unknown
+Priority: optional
+Maintainer: Mars <mars@xcompany.org>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.0
+Homepage: https://xcompany.org
+#Vcs-Browser: https://salsa.debian.org/debian/pki
+#Vcs-Git: https://salsa.debian.org/debian/pki.git
+Rules-Requires-Root: no
+
+Package: pki
+Architecture: all
+Depends: easy-rsa
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>

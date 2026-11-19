@@ -1,0 +1,5 @@
+pki (1.0.0-1) UNRELEASED; urgency=medium
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Mars <mars@xcompany.org>  Sat, 14 Nov 2026 09:48:05 +0000

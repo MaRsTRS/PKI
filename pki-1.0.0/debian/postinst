@@ -1,0 +1,13 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+	configure)
+		# Start script generation CA
+		/opt/easy-rsa/CA-CERT.sh >> /var/log/pki-setup.log 2>&1
+		;;
+     	*)
+
+esac
+exit 0

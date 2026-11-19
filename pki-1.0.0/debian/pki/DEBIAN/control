@@ -1,0 +1,11 @@
+Package: pki
+Version: 1.0.0-1
+Architecture: all
+Maintainer: Mars <mars@xcompany.org>
+Installed-Size: 14
+Depends: easy-rsa
+Section: unknown
+Priority: optional
+Homepage: https://xcompany.org
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
